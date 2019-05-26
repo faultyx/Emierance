@@ -1,3 +1,3 @@
 # Emierance
-***Brighten up your discord server.
+***Brighten up your server.
 https://discord.gg/6RwDF5Q***
