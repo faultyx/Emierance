@@ -1,8 +1,8 @@
 module.exports.run = client => {
 
- const Discord = require("discord.js");
- const settings = require("../settings");
- setInterval(function() {
+   const Discord = require("discord.js");
+   const settings = require("../settings");
+   setInterval(function() {
 
    let status = settings.game.name[Math.floor(Math.random() * settings.game.name.length)];
 
@@ -15,20 +15,20 @@ module.exports.run = client => {
      }
    });
 
- }, settings.game.statusInterval ? settings.game.statusInterval : 15000);
- const chalk = require("chalk");
- console.log(chalk.green("[READY]"));
+   }, settings.game.statusInterval ? settings.game.statusInterval : 15000);
+   const chalk = require("chalk");
+   console.log(chalk.green("[READY]"));
 
- if (client.user.id === "500338411459051521") {
-   let channel = client.channels.get("582573816975196170");
-   if (!channel) return;
-   const embed = new Discord.RichEmbed()
-   .setColor("GREEN")
-   .setTimestamp()
-   .setTitle("Restart")
-   .setThumbnail(client.user.displayAvatarURL)
-   .setDescription("Back online and ready! :3");
-   channel.send({embed});
- };
+    if (client.user.id === "500338411459051521") {
+    let channel = client.channels.get("582573816975196170");
+    if (!channel) return;
+    const embed = new Discord.RichEmbed()
+    .setColor("GREEN")
+    .setTimestamp()
+    .setTitle("Restart")
+    .setThumbnail(client.user.displayAvatarURL)
+    .setDescription("Back online and ready! :3");
+    channel.send({embed});
+  };
 
 };
