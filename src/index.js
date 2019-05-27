@@ -17,6 +17,8 @@ const client = new Commando.Client({
   unknownCommandResponse: false
 });
 
+const settings = require("./settings.json");
+
 const fs = require("fs");
 const chalk = require("chalk");
 const path = require("path");
@@ -30,8 +32,6 @@ fs.readdir("./events/", (err, files) => {
     });
 });
 
-const settings = require("./settings.json");
-
 if (!settings.token || settings.token == "" || settings.token == 0) {
   console.log(chalk`{red Please check that you have edited} {yellow settings.json} {red correctly.} {blue Token} {red is missing.}`);
 } else {
@@ -44,6 +44,9 @@ if (!settings.token || settings.token == "" || settings.token == 0) {
   }
 }
 
+const ErPR = require("./utils/database");
+
+client.setProvider(new ErPR(settings));
 client.login(settings.token)
 .catch(console.error);
 
