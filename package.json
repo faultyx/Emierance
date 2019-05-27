@@ -1,0 +1,33 @@
+{
+  "name": "emierance_rebuild",
+  "version": "2.3.2",
+  "description": "Brighten up your server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faultyx/Emierance.git"
+  },
+  "keywords": [
+    "discord_js-bot"
+  ],
+  "author": "Faulty X#1018",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/faultyx/Emierance/issues"
+  },
+  "homepage": "https://github.com/faultyx/Emierance#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "discord.js": "^11.5.0",
+    "discord.js-commando": "^0.10.0",
+    "enmap": "^4.8.7",
+    "fs": "0.0.1-security",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.2.2",
+    "mongodb": "^3.2.6",
+    "path": "^0.12.7"
+  }
+}
