@@ -47,6 +47,7 @@ if (!settings.token || settings.token == "" || settings.token == 0) {
 client.login(settings.token)
 .catch(console.error);
 
+client.registry
 .registerDefaultTypes()
 .registerGroups([
   ["utility", "Utility"],
