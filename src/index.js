@@ -1,6 +1,6 @@
 process.title = "Emier™ Discord Bot | Open source bot.";
 
-const Commando = require("discord.js");
+const Commando = require("discord.js-commando");
 const client = new Commando.Client({
   disableEveryone: true,
   settings: "./settings.json",
@@ -47,6 +47,7 @@ if (!settings.token || settings.token == "" || settings.token == 0) {
 const ErPR = require("./utils/database");
 
 client.setProvider(new ErPR(settings));
+
 client.login(settings.token)
 .catch(console.error);
 
