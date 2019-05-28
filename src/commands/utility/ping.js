@@ -14,7 +14,7 @@ module.exports = class pingCommand extends Command {
   async run(msg) {
     const embed = new Discord.RichEmbed()
     .setColor(null)
-    .setTitle("Ping?")
+    .setTitle("Ping?");
     let message = await msg.channel.send(embed);
     message.edit(new Discord.RichEmbed()
     .setColor("BLUE")
@@ -22,6 +22,6 @@ module.exports = class pingCommand extends Command {
     .setFooter(msg.author.tag, msg.author.displayAvatarURL)
     .setTitle("🏓 Pong!")
     .addField("Message:", `\`${message.createdTimestamp - msg.createdTimestamp}ms\``, true)
-    .addField("API:", `\`${Math.round(msg.client.ping)}ms\``, true))
+    .addField("API:", `\`${Math.round(msg.client.ping)}ms\``, true));
   }
 };
