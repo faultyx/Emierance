@@ -23,5 +23,5 @@ module.exports = class pingCommand extends Command {
     .setTitle("🏓 Pong!")
     .addField("Message:", `\`${message.createdTimestamp - msg.createdTimestamp}ms\``, true)
     .addField("API:", `\`${Math.round(msg.client.ping)}ms\``, true))
-  };
+  }
 };
