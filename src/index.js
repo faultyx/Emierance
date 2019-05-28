@@ -44,10 +44,6 @@ if (!settings.token || settings.token == "" || settings.token == 0) {
   }
 }
 
-const ErPR = require("./utils/database");
-
-client.setProvider(new ErPR(settings));
-
 client.login(settings.token)
 .catch(console.error);
 
