@@ -1,8 +1,6 @@
 # Notes
 
-This bot is open source and under MIT license. You may use the code for your bot as well, you do not have to ask but what I will say is that the **Database** file is not included for security reasons. Sorry about that. Yes I know this will render the bot useless with some commands & modules but you will have to continue the data file by yourself which I know is impossible but thats all I have to say. Thanks for using Emierance.
+This bot is open source and under MIT license. You may use the code for your bot as well, you do not have to ask. Since this branch is **Standard**, there is no database nor any modules that require the database but only regular non-database requiring commands.
+You can visit the master branch for the database version of the bot.
 
-PS: You can find some nice database examples from **NitroBot** & **Bastion** and re-code the files that do require database usage with your database code.
-
-Again, Sorry.
 - **Faulty X [inac/fd]#1018**
