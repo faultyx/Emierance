@@ -57,9 +57,6 @@ client.registry
   ["info", "Info"],
   ["search", "Search"],
   ["dbl", "DBL"],
-  ["owner", "Owner"],
-  ["staff", "Staff"],
-  ["guild", "Guild"],
-  ["core", "Core"]
+  ["owner", "Owner"]
 ])
 .registerCommandsIn(path.join(__dirname, "commands"));
