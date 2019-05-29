@@ -14,8 +14,8 @@ module.exports = class adviceCommand extends Command {
   }
   async run(msg) {
     let url = "http://api.adviceslip.com/advice";
+    try {
     request(url, function (err, res, body) {
-      try {
         let text = JSON.parse(body);
         const embed = new Discord.RichEmbed()
         .setColor("BLUE")
