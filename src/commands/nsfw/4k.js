@@ -39,7 +39,7 @@ module.exports = class fourkCommand extends Command {
         if (reac.emoji.name === "❌") {
           message.delete();
         }
-      })
+      });
       collector.on("end", () => {
         return null;
       });
