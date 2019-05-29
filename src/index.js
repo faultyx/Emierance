@@ -10,7 +10,7 @@ const client = new Commando.Client({
     "RELATIONSHIP_ADD",
     "RELATIONSHIP_REMOVE"
   ],
-  owner: "./settings.json".ownerID,
+  owner: require("./settings.json").ownerID,
   github: "https://github.com/faultyx/Emierance",
   commandPrefix: "e-",
   invite: "https://discord.gg/6RwDF5Q",
