@@ -13,7 +13,7 @@ const client = new Commando.Client({
   ],
   owner: settings.ownerID,
   github: "https://github.com/faultyx/Emierance",
-  commandPrefix: "e-",
+  commandPrefix: settings.prefix,
   invite: "https://discord.gg/6RwDF5Q",
   unknownCommandResponse: false
 });
