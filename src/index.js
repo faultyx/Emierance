@@ -1,7 +1,7 @@
 process.title = "Emier™ Discord Bot | Open source bot.";
 
 const Commando = require("discord.js-commando");
-const settings = require("./settings.json");
+const settings = require("./settings");
 const client = new Commando.Client({
   disableEveryone: true,
   settings: "./settings.json",
