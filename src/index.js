@@ -25,7 +25,7 @@ client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 
 const DiscordBotsList = require("dblapi.js");
-const dbl = new DiscordBotsList("DiscordBotsListTokenHere", client);
+const dbl = new DiscordBotsList(settings.dbl, client);
 
 dbl.on("posted", () => {
   console.log(chalk`{green [DBL]}: {white Posted Guild Count.}`);
