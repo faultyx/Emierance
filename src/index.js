@@ -3,15 +3,6 @@ const chalk = require("chalk");
 
 const fs = require("fs");
 
-fs.readdir("./events/", (err, files) => {
-    if (err) console.log(err);
-    files.forEach(file => {
-        let eventFile = require(`./events/${file}`);
-        let eventName = file.split(".")[0];
-        client.on(eventName, (...args) => eventFile.run(client, ...args));
-    });
-});
-
 const settings = require("./settings");
 
 const client = new Discord.Client({
@@ -21,8 +12,35 @@ const client = new Discord.Client({
   owner: settings.ownerID
 });
 
+fs.readdir("./events/", (err, files) => {
+    if (err) console.log(err);
+    files.forEach(file => {
+        let eventFile = require(`./events/${file}`);
+        let eventName = file.split(".")[0];
+        client.on(eventName, (...args) => eventFile.run(client, ...args));
+    });
+});
+
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
+
+fs.readdir("./commands/", (err, files) => {
+  if (err)
+    console.error(err);
+  let jsfiles = files.filter(f => f.split('.')
+    .pop() === 'js');
+  if (jsfiles.length <= 0) {
+    return;
+  }
+  jsfiles.forEach(f => {
+    let props = require(`./commands/${ f }`);
+    props.fileName = f;
+    client.commands.set(props.help.name, props);
+    props.conf.aliases.forEach(alias => {
+      client.aliases.set(alias, props.help.name);
+    });
+  });
+});
 
 const DiscordBotsList = require("dblapi.js");
 const dbl = new DiscordBotsList(settings.dbl, client);
