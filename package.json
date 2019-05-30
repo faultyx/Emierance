@@ -1,0 +1,29 @@
+{
+  "name": "emier-prem",
+  "version": "2.3.2",
+  "description": "Brighten up your server.",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "dblapi.js": "^2.3.0",
+    "discord.js": "^11.5.1",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faultyx/Emierance.git"
+  },
+  "keywords": [
+    "discord-js-bot"
+  ],
+  "author": "Faulty X#1018",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/faultyx/Emierance/issues"
+  },
+  "homepage": "https://github.com/faultyx/Emierance#readme"
+}

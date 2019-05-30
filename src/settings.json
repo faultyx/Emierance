@@ -1,0 +1,12 @@
+{
+  "token": "",
+  "prefix": "e-",
+  "game": {
+  "statusInterval": 15000,
+  "status": "online",
+  "name": ["e- | :3", "what's here?", "owo"],
+  "type": "PLAYING",
+  "url": "https://twitch.tv/yourusernamehere"
+  },
+  "ownerID": ""
+}
