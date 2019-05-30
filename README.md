@@ -1,4 +1,4 @@
-[![Emier Banner](https://i.imgur.com/avB2YTS.png)](https://discord.gg/6RwDF5Q "Emier™")
+[![Emier Banner](https://i.imgur.com/FG9s3pz.png)](https://discord.gg/6RwDF5Q "Emier™")
 
 ***Support server: https://discord.gg/6RwDF5Q***
 
