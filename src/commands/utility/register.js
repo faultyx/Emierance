@@ -1,6 +1,6 @@
 const Command = require("../Command");
 const User = require("../../utils/_user);
-module.exports = class pingCommand extends Command {
+module.exports = class registerCommand extends Command {
   constructor(client) {
       super(client, {
       name: "register",
