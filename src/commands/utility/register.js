@@ -13,7 +13,7 @@ module.exports = class pingCommand extends Command {
   }
   run(msg) {
     User.findOne({
-      id: message.author.id
+      id: msg.author.id
     }, (err, user) => {
       if (!user) {
         User.create({
@@ -21,7 +21,15 @@ module.exports = class pingCommand extends Command {
           name: msg.author.tag,
           avatar: msg.author.avatarURL,
           created: msg.author.createdAt.getTime(),
+          description: "No description set.",
           blacklisted: false
         })
         User.save().catch(err => console.log(err);
-         return msg.channel.send                 
+        return msg.channel.send("Created your profile!");
+      }
+      if (user) {
+        return msg.channel.send("You are already registered!");
+      }
+      })
+    }
+   };
