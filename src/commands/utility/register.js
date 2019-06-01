@@ -12,6 +12,10 @@ module.exports = class registerCommand extends Command {
     });
   }
   run(msg) {
+    function getDate(msg) {
+      const date = msg.author.createdAt;
+      return date;
+    }
     User.findOne({
       id: msg.author.id
     }, (err, user) => {
@@ -20,7 +24,7 @@ module.exports = class registerCommand extends Command {
           id: msg.author.id,
           name: msg.author.tag,
           avatar: msg.author.avatarURL,
-          created: msg.author.createdAt.getTime(),
+          created: getDate(msg.author),
           description: "No description set.",
           blacklisted: false
         })
