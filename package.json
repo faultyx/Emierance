@@ -32,6 +32,7 @@
     "path": "^0.12.7",
     "random-puppy": "^1.1.0",
     "request": "^2.88.0",
-    "snekfetch": "^4.0.4"
+    "snekfetch": "^4.0.4",
+    "mongoose": "^5.5.12"
   }
 }
