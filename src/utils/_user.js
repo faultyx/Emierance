@@ -4,7 +4,7 @@ const User = new mongoose.Schema({
   id: String,
   name: String,
   avatar: String,
-  created: Date,
+  created: String,
   description: String,
   blacklisted: Boolean
 })
