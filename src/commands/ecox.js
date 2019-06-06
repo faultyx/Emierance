@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 module.exports = ecox {
   
   this.savingAmount = new mongoose.Schema({
-    saved: String
+    saved: INTEGER
   });
   
   this.savingAmount.create({ size: "large", saved: 0 }).then(() => console.log("[savingAmount] Schema created.");
