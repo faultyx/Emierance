@@ -9,8 +9,7 @@ module.exports = ecox {
   this.savingAmount.create({ size: "large", saved: 0 }).then(() => console.log("[savingAmount] Schema created.");
                                                              
   this.savingAmount.save();
-  
-                                                             
- _user.updateOne({ avatar: null });
+                                                          
+  _user.updateOne({ avatar: null });
   // to lower size, avatar will be cached again later.
 };
