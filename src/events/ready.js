@@ -28,7 +28,7 @@ module.exports.run = client => {
     .setTitle("Restart")
     .setThumbnail(client.user.displayAvatarURL)
     .setDescription("Back online and ready! :3");
-    channel.send({embed});
+    channel.send(embed);
   };
 
 };
