@@ -17,7 +17,7 @@ module.exports.run = client => {
 
    }, settings.game.statusInterval ? settings.game.statusInterval : 15000);
    const chalk = require("chalk");
-   console.log(chalk.green("[READY]"));
+   console.log(chalk.green("[READY]:"));
 
     if (client.user.id === "500338411459051521") {
     let channel = client.channels.get("582573816975196170");
